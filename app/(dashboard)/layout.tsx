@@ -8,10 +8,7 @@ export default function DashboardLayout({
 }) {
   return (
     <ProtectedRoute>
-      <DashboardNav />
-      <main className="ml-64 flex-1 p-6">
-        {children}
-      </main>
+      <DashboardNav>{children}</DashboardNav>
     </ProtectedRoute>
   );
 }
