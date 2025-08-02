@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Assignment Submission Portal
 
-## Getting Started
+A role-based web application built with **Next.js**, designed to manage student assignment submissions and instructor feedback, including a live submission status chart.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Github and Live Link
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Github Repo Link**:
+    ```bash
+    https://github.com/fardin072/Final-PH-Assignment-Portal.git
+    ```
+2. **Live Link**:
+    ```bash
+    https://task-cove.netlify.app/
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 👥 User Roles & Capabilities
 
-To learn more about Next.js, take a look at the following resources:
+### 🧑‍🏫 Instructor
+- Create assignments (title, description, deadline)
+- View all student submissions
+- Provide feedback and update status: ✅ Accepted, ❌ Rejected, ⏳ Pending
+- View a dynamic pie chart showing submission statuses
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🧑‍🎓 Student
+- View available assignments
+- Submit assignments (submission URL + note)
+- View submitted assignments with status and feedback
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔐 Authentication & Access
+- Auth handled with **NextAuth.js**
+- Email & password registration/login
+- Role-based access (Instructor / Student)
+- Protected routes for different user types
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧩 Features
+- 📝 Assignment creation (Instructors only)
+- 📃 Assignment list (for all users)
+- 📤 Student submission form
+- 🧾 Instructor review & feedback panel
+- 📊 Pie chart showing assignment status breakdown (Pending, Accepted, Rejected)
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology     | Purpose                           |
+|----------------|-----------------------------------|
+| Next.js (App Router) | Framework                   |
+| Tailwind CSS   | UI Styling                        |
+| NextAuth.js    | Authentication                    |
+| MongoDB        | Database (assumed if backend used) |
+| Recharts / Chart.js | Data Visualization (Pie Chart) |
+
+---
+
