@@ -11,10 +11,7 @@ A role-based web application built with **Next.js**, designed to manage student 
     ```bash
     https://github.com/fardin072/Final-PH-Assignment-Portal.git
     ```
-2. **Live Link**:
-    ```bash
-    https://task-cove.netlify.app/
-    ```
+
 
 ---
 
