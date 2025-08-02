@@ -3,8 +3,8 @@ import mongoose from 'mongoose';
 declare global {
   var mongoose: any;
 }
-
-const MONGODB_URI = process.env.MONGODB_URI!;
+// First time I create a .env file, but for some problem and short time I had to choose this.
+const MONGODB_URI = "mongodb+srv://omurfaruquetalukder9:npdf61Ixl2jlI8MR@cluster0.7658zgv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
